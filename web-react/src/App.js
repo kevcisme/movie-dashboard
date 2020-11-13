@@ -36,7 +36,7 @@ function Copyright() {
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
       <MUILink color="inherit" href="https://grandstack.io/">
-        Your GRANDstack App Name Here
+        42nd Random St.
       </MUILink>{' '}
       {new Date().getFullYear()}
       {'.'}
@@ -176,7 +176,7 @@ export default function App() {
               noWrap
               className={classes.title}
             >
-              Welcome To GRANDstack App
+              42nd Random St.
             </Typography>
           </Toolbar>
         </AppBar>

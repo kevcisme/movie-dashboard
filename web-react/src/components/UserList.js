@@ -94,7 +94,7 @@ function UserList(props) {
 
   return (
     <Paper className={classes.root}>
-      <Title>User List</Title>
+      <Title>Movie Search</Title>
       <TextField
         id="search"
         label="User Name Contains"

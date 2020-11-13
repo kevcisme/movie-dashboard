@@ -27,7 +27,7 @@ export default function Deposits() {
   if (error) return <p>Error</p>
   return (
     <React.Fragment>
-      <Title>Total Users</Title>
+      <Title>Total Movies</Title>
       <Typography component="p" variant="h4">
         {loading ? 'Loading...' : data.userCount}
       </Typography>
@@ -36,7 +36,7 @@ export default function Deposits() {
       </Typography>
       <div>
         <Link to="/users" className={classes.navLink}>
-          View users
+          View movies
         </Link>
       </div>
     </React.Fragment>
