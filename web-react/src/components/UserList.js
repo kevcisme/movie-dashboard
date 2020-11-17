@@ -97,7 +97,7 @@ function UserList(props) {
       <Title>Movie Search</Title>
       <TextField
         id="search"
-        label="User Name Contains"
+        label="Film Title"
         className={classes.textField}
         value={filterState.usernameFilter}
         onChange={handleFilterChange('usernameFilter')}

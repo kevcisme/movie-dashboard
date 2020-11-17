@@ -5,7 +5,9 @@ import { makeStyles } from '@material-ui/core/styles'
 import clsx from 'clsx'
 
 import RatingsChart from './RatingsChart'
+import Ridgeplot from './Ridgeplot'
 import UserCount from './UserCount'
+import ContourHeatmap from './ContourHeatmap'
 import RecentReviews from './RecentReviews'
 export default function Dashboard() {
   const theme = useTheme()
@@ -33,13 +35,13 @@ export default function Dashboard() {
         {/* Ratings Chart */}
         <Grid item xs={12} md={8} lg={7}>
           <Paper className={fixedHeightPaper}>
-            <RatingsChart />
+            <Ridgeplot />
           </Paper>
         </Grid>
-        {/* User Count */}
+        {/* Heatmap */}
         <Grid item xs={12} md={4} lg={5}>
           <Paper className={fixedHeightPaper}>
-            <UserCount />
+            <ContourHeatmap />
           </Paper>
         </Grid>
         {/* Recent Reviews */}

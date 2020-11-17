@@ -32,14 +32,14 @@ export default function RecentReviews() {
 
   return (
     <React.Fragment>
-      <Title>Recent Reviews</Title>
+      <Title>Recent Films</Title>
       <Table size="small">
         <TableHead>
           <TableRow>
             <TableCell>Date</TableCell>
-            <TableCell>Business Name</TableCell>
-            <TableCell>User Name</TableCell>
-            <TableCell>Review Text</TableCell>
+            <TableCell>Film Name</TableCell>
+            <TableCell>Box Office</TableCell>
+            <TableCell>MPAA Rating</TableCell>
             <TableCell align="right">Review Stars</TableCell>
           </TableRow>
         </TableHead>

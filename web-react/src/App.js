@@ -27,7 +27,7 @@ import {
   ChevronLeft as ChevronLeftIcon,
   Menu as MenuIcon,
   Dashboard as DashboardIcon,
-  People as PeopleIcon,
+  Movie as MovieIcon,
 } from '@material-ui/icons'
 import Dashboard from './components/Dashboard'
 
@@ -35,7 +35,7 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {'Copyright © '}
-      <MUILink color="inherit" href="https://grandstack.io/">
+      <MUILink color="#84a9ac" href="https://s3-us-west-2.amazonaws.com/www.nirvanalytics.com/index.html" target="_blank">
         42nd Random St.
       </MUILink>{' '}
       {new Date().getFullYear()}
@@ -125,7 +125,7 @@ const useStyles = makeStyles((theme) => ({
   },
   navLink: {
     textDecoration: 'none',
-    color: 'inherit',
+    color: '#204051',
   },
   appBarImage: {
     maxHeight: '75px',
@@ -154,7 +154,7 @@ export default function App() {
           <Toolbar className={classes.toolbar}>
             <IconButton
               edge="start"
-              color="inherit"
+              color="#84a9ac"
               aria-label="open drawer"
               onClick={handleDrawerOpen}
               className={clsx(
@@ -206,9 +206,9 @@ export default function App() {
             <Link to="/users" className={classes.navLink}>
               <ListItem button>
                 <ListItemIcon>
-                  <PeopleIcon />
+                  <MovieIcon />
                 </ListItemIcon>
-                <ListItemText primary="Users" />
+                <ListItemText primary="Movies" />
               </ListItem>
             </Link>
           </List>

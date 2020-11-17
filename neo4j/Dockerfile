@@ -10,6 +10,10 @@ RUN sh -c 'cd /var/lib/neo4j/plugins && curl -L -O "${APOC_URI}"'
 ENV GRAPHQL_URI https://github.com/neo4j-graphql/neo4j-graphql/releases/download/${GRAPHQL_VERSION}/neo4j-graphql-${GRAPHQL_VERSION}.jar
 RUN sh -c 'cd /var/lib/neo4j/plugins && curl -L -O "${GRAPHQL_URI}"'
 
+COPY ./graph.db /data/graph.db
+
+ENV NEO4J_dbms_active__database=graph.db
+
 EXPOSE 7474 7473 7687
 
 CMD ["neo4j"]
