@@ -23,3 +23,5 @@ yarn-error.log*
 *~
 *.orig
 app.json
+.prettierrc.json
+.eslintrc.json
