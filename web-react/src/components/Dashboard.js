@@ -9,6 +9,8 @@ import Ridgeplot from './Ridgeplot'
 import UserCount from './UserCount'
 import ContourHeatmap from './ContourHeatmap'
 import RecentReviews from './RecentReviews'
+// import MovieSearch from './MovieSearch'
+
 export default function Dashboard() {
   const theme = useTheme()
 
